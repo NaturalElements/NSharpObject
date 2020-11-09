@@ -27,6 +27,9 @@ public:
 	NSharpObject CallMethod(const std::string& methodName);
 	NSharpObject CallMethod(const std::string& methodName, const std::list<NSharpObject>& args);
 
+	static NSharpObject CallStaticMethod(const std::string& typeName, const std::string& methodName);
+	static NSharpObject CallStaticMethod(const std::string& typeName, const std::string& methodName, const std::list<NSharpObject>& args);
+
 private:
 	void Check();
 
